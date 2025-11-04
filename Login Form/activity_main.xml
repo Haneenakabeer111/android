@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#BB86FC"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="32dp"/>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signin"
+        android:layout_marginTop="16dp"
+        android:hint="Username"
+        android:background="#30ffffff"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/outline_person_24"
+        android:drawablePadding="16dp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="#30ffffff"
+        android:padding="16dp"
+        android:drawableLeft="@drawable/outline_eye_tracking_24"
+        android:drawablePadding="16dp"/>
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:background="#6200EE"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"/>
+</RelativeLayout>
